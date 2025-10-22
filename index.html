@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-<html lang ="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name ="viewport" content="width=device-width" inital-scale="1.0">
-        <title>Mi Empresa Di-Web</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <h1>Industries Di-Web</h1>
-                <div class="nav">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="nosotros.html">Nosotros</li>
-                        <li><a href="portafolio.html">Portafolio</a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="hero">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Industries Di-Web: Servicios web asequibles para emprendedores y empresas pequeñas. Desarrollo, diseño y más.">
+    <title>Industries Di-Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Industries Di-Web</h1>
+            <nav class="nav" role="navigation" aria-label="Menú principal">
+                <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero" style="background-image: url('images/hero-bg.jpg'); background-size: cover;">
+            <div class="hero-content">
                 <h2>Sea bienvenido a Industries Di-Web</h2>
-                <p>Somos una empresa en pleno ascenso, por ende no somos exigentes a nuestros clientes en cuanto se requiere a remuneraciones</p>
-                <p>Ofrecemos distintos servicios y soluciones practicas a empresas pequeñas y emprendedores que buscan impulsar su negocio.</p>
+                <p>Somos una empresa en pleno ascenso, por ende no somos exigentes a nuestros clientes en cuanto se requiere a remuneraciones. Ofrecemos distintos servicios y soluciones prácticas a empresas pequeñas y emprendedores que buscan impulsar su negocio.</p>
+                <a href="contacto.html" class="cta-button">Contáctanos Ahora</a>
             </div>
-        </main>
-        <footer>
-            <div class="content">
-                <p>&copy; 2025 Industries Di-Web. Todos los derechos reservados.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="content">
+            <p>&copy; 2025 Industries Di-Web. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">Facebook</a> | <a href="#" aria-label="Twitter">Twitter</a>
             </div>
-        </footer>
-    </body>
+        </div>
+        <button class="back-to-top" aria-label="Volver arriba">↑</button>
+    </footer>
+</body>
 </html>

@@ -1,56 +1,72 @@
 <!DOCTYPE html>
-<html lang ="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name ="viewport" content="width=device-width" inital-scale="1.0">
-        <title>Mi Empresa Di-Web</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <h1>Industries Di-Web</h1>
-                <div class="nav">
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre nuestros servicios en Industries Di-Web: Desarrollo web, diseño UX/UI, SEO y marketing digital.">
+    <title>Servicios - Industries Di-Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Industries Di-Web</h1>
+            <nav class="nav" role="navigation" aria-label="Menú principal">
+                <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <nav class="breadcrumbs">
+            <a href="index.html">Inicio</a> > Servicios
+        </nav>
+        <section class="services">
+            <h2>Nuestros Servicios</h2>
+            <div class="services-list">
+                <article id="desarrollo-web">
+                    <h3>Desarrollo Web</h3>
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="nosotros.html">Nosotros</li>
-                        <li><a href="portafolio.html">Portafolio</a></li>
+                        <li><strong>Desarrollo de Sitios Web Estáticos.</strong></li>
+                        <li><strong>Páginas simples y rápidas.</strong></li>
+                        <li><strong>Ideales para blogs o landing pages.</strong></li>
                     </ul>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="servicies">
-                <h2>Nuestros Servicios</h2>
-                <div class="Varios">
+                </article>
+                <article id="diseno-ux-ui">
+                    <h3>Diseño UX/UI</h3>
                     <ul>
-                        <li><a div="Desarrollo_Web">Desarrollo_Web</a></li>
-                        <ol>
-                            <li><Strong>Desarrollo de Sitios Web Estaticos.</Strong></li>
-                            <li><Strong>Paginas simples y rápidas.</Strong></li>
-                            <li><Strong>Ideales para blogs o landing pages.</Strong></li>
-                        </ol>
-                        <li><a div="Diseno_UX/UI">Diseño_UX/XI</a></li>
-                        <ol>
-                            <li><Strong>Desarrollo de Aplicativos Webs</Strong></li>
-                            <li><Strong>Rediseño de paginas Webs</Strong></li>
-                            <li><Strong>Diseño de Servicios</Strong></li>
-                        </ol>
-                        <li><a div="Optimizacion_SEO">Optimizacion_SEO</a></li>
-                        <ol>
-                            <li><Strong>Rediseño de paginas orientado a un tema o caracteristica en particular.</Strong></li>
-                        </ol>
-                        <li><a div="Marketing_Digital">Marketing_Digital</a></li>
+                        <li><strong>Desarrollo de Aplicativos Web.</strong></li>
+                        <li><strong>Rediseño de páginas Web.</strong></li>
+                        <li><strong>Diseño de Servicios.</strong></li>
                     </ul>
-                </div>
+                </article>
+                <article id="optimizacion-seo">
+                    <h3>Optimización SEO</h3>
+                    <ul>
+                        <li><strong>Rediseño de páginas orientado a un tema o característica en particular.</strong></li>
+                    </ul>
+                </article>
+                <article id="marketing-digital">
+                    <h3>Marketing Digital</h3>
+                    <p>Ofrecemos estrategias personalizadas para aumentar tu presencia online, incluyendo redes sociales y campañas publicitarias.</p>
+                </article>
             </div>
-        </main>
-        <footer>
-            <div class="content">
-                <p>&copy; 2025 Industries Di-Web. Todos los derechos reservados.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="content">
+            <p>&copy; 2025 Industries Di-Web. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">Facebook</a> | <a href="#" aria-label="Twitter">Twitter</a>
             </div>
-        </footer>
-    </body>
+        </div>
+        <button class="back-to-top" aria-label="Volver arriba">↑</button>
+    </footer>
+</body>
 </html>

@@ -1,48 +1,74 @@
 <!DOCTYPE html>
-<html lang ="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name ="viewport" content="width=device-width" inital-scale="1.0">
-        <title>Mi Empresa Di-Web</title>
-        <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <h1>Industries Di-Web</h1>
-                <div class="nav">
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="nosotros.html">Nosotros</li>
-                        <li><a href="portafolio.html">Portafolio</a></li>
-                    </ul>
-                </div>
-            </div>
-        </header>
-        <main>
-            <div class="portafolio">
-                <h2>Nuestros Portafolios</h2>
-                <p>Aqui tenemos como ejemplo algunos portafolios, que se desarrollaron por nuestro equipo. </p>
-                <section>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explora nuestro portafolio en Industries Di-Web: Sitios web para restaurantes, personales y tiendas online.">
+    <title>Portafolio - Industries Di-Web</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Industries Di-Web</h1>
+            <nav class="nav" role="navigation" aria-label="Menú principal">
+                <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <nav class="breadcrumbs">
+            <a href="index.html">Inicio</a> > Portafolio
+        </nav>
+        <section class="portfolio">
+            <h2>Nuestros Portafolios</h2>
+            <p>Aquí tenemos como ejemplo algunos portafolios que se desarrollaron por nuestro equipo.</p>
+            <div class="slider">
+                <div class="slide active">
                     <h3>Sitio Web para Restaurante</h3>
-                    <p>Sitio Web estatico, con reservas, formularios, eventos, carta, y demas. <a href="#">Ver proyecto</a></p>
-                </section>
-                <section>
+                    <img src="images/restaurant-placeholder.jpg" alt="Vista previa del sitio web para restaurante">
+                    <p>Sitio web estático con reservas, formularios, eventos, carta y demás.</p>
+                    <button class="view-project" data-project="restaurant">Ver Proyecto</button>
+                </div>
+                <div class="slide">
                     <h3>Sitio Web Personal</h3>
-                    <p>Sitio Web con distinta dinámica con articulos, galería de fotos, reseñas, actividades programadas,etc. <a href="#">Ver proyecto</a></p>
-                </section>
-                <section>
+                    <img src="images/personal-placeholder.jpg" alt="Vista previa del sitio web personal">
+                    <p>Sitio web con distinta dinámica con artículos, galería de fotos, reseñas, actividades programadas, etc.</p>
+                    <button class="view-project" data-project="personal">Ver Proyecto</button>
+                </div>
+                <div class="slide">
                     <h3>Tienda Online</h3>
-                    <p>Sitio Web con un catálago variado, de productos y carrito simples. <a href="#">Ver proyecto</a></p>
-                </section>
+                    <img src="images/store-placeholder.jpg" alt="Vista previa de la tienda online">
+                    <p>Sitio web con un catálogo variado de productos y carrito simple.</p>
+                    <button class="view-project" data-project="store">Ver Proyecto</button>
+                </div>
+                <button class="prev" aria-label="Proyecto anterior">‹</button>
+                <button class="next" aria-label="Proyecto siguiente">›</button>
             </div>
-        </main>
-        <footer>
-            <div class="content">
-                <p>&copy; 2025 Industries Di-Web. Todos los derechos reservados.</p>
+        </section>
+        <div id="modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+            <div class="modal-content">
+                <span class="close" aria-label="Cerrar modal">&times;</span>
+                <h3 id="modal-title">Detalles del Proyecto</h3>
+                <p id="modal-description">Información adicional aquí.</p>
             </div>
-        </footer>
-    </body>
+        </div>
+    </main>
+    <footer>
+        <div class="content">
+            <p>&copy; 2025 Industries Di-Web. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook">Facebook</a> | <a href="#" aria-label="Twitter">Twitter</a>
+            </div>
+        </div>
+        <button class="back-to-top" aria-label="Volver arriba">↑</button>
+    </footer>
+</body>
 </html>
